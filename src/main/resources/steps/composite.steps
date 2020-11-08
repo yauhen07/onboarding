@@ -1,0 +1,10 @@
+Composite: When Log in as existing user
+
+Given I am on the main application page
+When I click on element located `${loginButton}`
+When I enter `${login}` in field located `${logInField}`
+When I click on element located `${logInWithAtlassianButton}`
+When I wait until element located `${passwordAtlassianField}` appears
+When I enter `${password}` in field located `${passwordAtlassianField}`
+When I click on element located `${loginAtlassianButton}`
+When I wait until element located `${boardsPageLink}` appears

@@ -10,7 +10,9 @@
 *.ipr
 *.iws
 **/.idea
+debug.log
 
 #Build Dirs#
 output/
 .out/**
+gradle/
