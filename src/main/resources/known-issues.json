@@ -1,2 +1,11 @@
 {
+  "ONB-1": {
+    "type": "Automation",
+    "assertionPattern": "Visual check passed.*",
+    "storyPattern": "VerifyProfile.*",
+    "stepPattern": ".*baseline with.*",
+    "dynamicPatterns": {
+      "currentPageUrl": ".*trello.com/templates.*"
+    }
+  }
 }

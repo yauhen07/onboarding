@@ -1,10 +1,17 @@
-Composite: When Log in as existing user
+Composite: When Log in as existing user with $login and $password
 
 Given I am on the main application page
 When I click on element located `${loginButton}`
-When I enter `${login}` in field located `${logInField}`
+When I enter `<login>` in field located `${logInField}`
 When I click on element located `${logInWithAtlassianButton}`
 When I wait until element located `${passwordAtlassianField}` appears
-When I enter `${password}` in field located `${passwordAtlassianField}`
+When I enter `<password>` in field located `${passwordAtlassianField}`
 When I click on element located `${loginAtlassianButton}`
 When I wait until element located `${boardsPageLink}` appears
+
+Composite: When Delete board
+
+When I click on element located `By.Xpath(//div[@class="content-all-boards"]/div/div/ul[1]/li[1]/a)`
+When I click on element located `By.Xpath(//a[@class='board-menu-navigation-item-link js-open-more'])`
+When I click on element located `By.Xpath(//a[@class='board-menu-navigation-item-link js-close-board'])`
+When I click on element located `By.Xpath(//*[@class='js-confirm full negate'])`
